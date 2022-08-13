@@ -10,7 +10,7 @@ global _start
 
 section .text
 _start:
-    print $message, $message_len
+    print message, message_len
 
     mov rax, 60            ; exit(
     mov rdi, 0             ;      EXIT_SUCCESS
