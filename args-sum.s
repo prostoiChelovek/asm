@@ -4,7 +4,7 @@ section .text
 _start:                         
     pop rax                     ; rax = argc; stack pointer on argv now
 
-    mov rbx, [rsp + 1]           ; rbx = argv[1] - address of the second string array
+    mov rbx, [rsp + 8]          ; rbx = argv[1] - address of the second string array
     mov rcx, 0                  ; length
 _loop:
     mov bpl, byte [rbx + rcx]   ; bpl = argv[0][rcx]
